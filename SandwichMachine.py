@@ -50,3 +50,13 @@ class SandwichMachine:
         self.machine_resources["ham"] -= size_resources["ham"]
         self.machine_resources["cheese"] -= size_resources["cheese"]
 
+    def check_all(self, sandwich_size):
+        if self.check_resources(sandwich_size):
+            sandwich_cost = SandwichDataModel.recipes[sandwich_size]["cost"]
+            if transaction_result(process_coins(), sandwich_cost):
+                self.make_sandwich(sandwich_size)
+                print(f"A {sandwich_size} sandwich was made!")
+                return
+            print("Not enough money!")
+            return
+        print("Not enough resources!")
