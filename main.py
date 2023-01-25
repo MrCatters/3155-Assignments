@@ -14,14 +14,18 @@ def check_user_input(user_input):
 
 while True:
     newMachine = SandwichMachine(SandwichDataModel.resources)
-
     userInput = input("What would you like? (small/ medium/ large/ off/ report)")
+
     if userInput == "off":
         break
     if userInput == "report":
         newMachine.display_resources()
-        print("\n")
         continue
     if not check_user_input(userInput):
         continue
-    newMachine.check_all(userInput)
+    if newMachine.check_resources(userInput):
+        sandwich_cost = SandwichDataModel.recipes[userInput]["cost"]
+        money_held = newMachine.process_coins()
+        if newMachine.transaction_result(money_held, sandwich_cost):
+            newMachine.make_sandwich(userInput)
+
