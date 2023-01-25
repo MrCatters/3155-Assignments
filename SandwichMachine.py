@@ -6,6 +6,7 @@ def transaction_result(coins, sandwich_cost):
     return float(coins - sandwich_cost) >= 0
 
 
+
 def process_coins():
     print("How many:")
     total = 0
