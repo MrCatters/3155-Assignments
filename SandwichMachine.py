@@ -43,3 +43,10 @@ class SandwichMachine:
         print(f'{resources["bread"]} slices of bread.')
         print(f'{resources["ham"]} slices of ham.')
         print(f'{resources["cheese"]} ounces of cheese.')
+
+    def make_sandwich(self, sandwich_size):
+        size_resources = SandwichDataModel.recipes[sandwich_size]["ingredients"]
+        self.machine_resources["bread"] -= size_resources["bread"]
+        self.machine_resources["ham"] -= size_resources["ham"]
+        self.machine_resources["cheese"] -= size_resources["cheese"]
+
