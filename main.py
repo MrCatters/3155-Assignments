@@ -26,6 +26,6 @@ while True:
     if newMachine.check_resources(userInput):
         sandwich_cost = SandwichDataModel.recipes[userInput]["cost"]
         money_held = newMachine.process_coins()
+
         if newMachine.transaction_result(money_held, sandwich_cost):
             newMachine.make_sandwich(userInput)
-
