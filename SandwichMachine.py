@@ -35,3 +35,11 @@ class SandwichMachine:
             print("Sorry there is not enough ham.")
             return False
         return True
+
+    @staticmethod
+    def display_resources():
+        resources = SandwichDataModel.resources
+        print(f'You have:')
+        print(f'{resources["bread"]} slices of bread.')
+        print(f'{resources["ham"]} slices of ham.')
+        print(f'{resources["cheese"]} ounces of cheese.')
