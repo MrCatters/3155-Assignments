@@ -18,19 +18,24 @@ def check_user_input(user_input):
     return False
 
 
-while True:
-    userInput = input("What would you like? (small/ medium/ large/ off/ report)")
+def main():
+    while True:
+        user_input = input("What would you like? (small/ medium/ large/ off/ report)")
 
-    if userInput == "off":
-        break
-    if userInput == "report":
-        sandwich_maker_instance.display_resources()
-        continue
-    if not check_user_input(userInput):
-        continue
-    if sandwich_maker_instance.check_resources(userInput):
-        sandwich_cost = recipes[userInput]["cost"]
-        money_held = cashier_instance.process_coins()
+        if user_input == "off":
+            break
+        if user_input == "report":
+            sandwich_maker_instance.display_resources()
+            continue
+        if not check_user_input(user_input):
+            continue
+        if sandwich_maker_instance.check_resources(user_input):
+            sandwich_cost = recipes[user_input]["cost"]
+            money_held = cashier_instance.process_coins()
 
-        if cashier_instance.transaction_result(money_held, sandwich_cost):
-            sandwich_maker_instance.make_sandwich(userInput)
+            if cashier_instance.transaction_result(money_held, sandwich_cost):
+                sandwich_maker_instance.make_sandwich(user_input)
+
+
+if __name__ == "__main__":
+    main()
