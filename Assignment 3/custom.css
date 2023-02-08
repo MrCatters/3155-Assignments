@@ -1,0 +1,13 @@
+.title {
+    color: #da0063;
+    font-weight: bold;
+}
+
+div.row>*,
+.h2 {
+    margin-top: 15px;
+}
+
+.row {
+    width: 100px;
+}
