@@ -1,6 +1,7 @@
 // Create circle svg elements.
 let moneyCircle = document.querySelectorAll(".circle");
-for (const element of moneyCircle) {
+var moneyTexts = [1, 0.5, 0.25, 0.05];
+for (let i = 0; i < moneyCircle.length; i++) {
     // https://stackoverflow.com/a/69877010
     element.innerHTML = `<div class="position-relative">
     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
@@ -9,15 +10,7 @@ for (const element of moneyCircle) {
             0 0 0 16z"/>
         </svg>
         <div class="d-flex justify-content-center align-items-center position-absolute w-100 h-100 p-3" style="top:0;left:0;">
-            <h1 class="position-absolute" style='font-size:larger'></h1>
+            <h1 class="position-absolute" style='font-size:larger'>`+moneyTexts[i]+`</h1>
         </div>
     </div>`;
-
-    console.log(moneyCircle);
-    var moneyTexts = [1, 0.5, 0.25, 0.05];
-    for (let i = 0; i < moneyCircle.length; i++) {
-        let moneyTextBox = moneyCircle[i].querySelector("h1");
-        console.log(moneyTextBox);
-        moneyTextBox.innerHTML = moneyTexts[i];
-    }
 }
