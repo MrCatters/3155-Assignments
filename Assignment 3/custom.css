@@ -1,19 +1,6 @@
-.title {
-    color: #da0063;
-    font-weight: bold;
-}
-
-div.row>*,
-.h2 {
-    margin-top: 15px;
-}
-
-.column > button {
-    width: 10em;
-    margin-left: 15px;
-}
-
-.circle {
-    margin-top: 10px;
+/* Give space between each dive element in flex box. */
+.d-flex > div {
+    margin-top: 25px;
     position: relative;
+    height: fit-content;
 }
