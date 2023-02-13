@@ -5,10 +5,10 @@
     height: fit-content;
 }
 
+svg {
+    margin-bottom: 15px;
+}
+
 .rounded-circle{
-    height: 90px;
-    width: 90px;
-    background-color: grey;
-    border-color: yellow;
-    border-radius: 90ch;
+    background-color: #e1dfdf;
 }
