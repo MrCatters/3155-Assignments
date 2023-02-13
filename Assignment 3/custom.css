@@ -4,3 +4,11 @@
     position: relative;
     height: fit-content;
 }
+
+.rounded-circle{
+    height: 90px;
+    width: 90px;
+    background-color: grey;
+    border-color: yellow;
+    border-radius: 90ch;
+}

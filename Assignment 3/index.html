@@ -13,6 +13,7 @@
         <main>
             <div>
                 <p class="display-3 text-center title"
+                    id = "title"
                     style="color:#da0063; font-weight: bold;">
                     Sandwich Maker Machine
                 </p>
@@ -20,10 +21,18 @@
             <div class="d-flex justify-content-around">
                 <div class="d-flex flex-column align-items-center">
                     <div class="col h1">Cashier</div>
-                    <div class="col circle">1.0</div>
-                    <div class="col circle">0.5</div>
-                    <div class="col circle">0.25</div>
-                    <div class="col circle">0.05</div>
+                    <svg class="bd-placeholder-img rounded-circle" width="90" height="90" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="true">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="20%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    <svg class="bd-placeholder-img rounded-circle" width="90" height="90" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="true">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="20%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    <svg class="bd-placeholder-img rounded-circle" width="90" height="90" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="true">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="20%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+                    <svg class="bd-placeholder-img rounded-circle" width="90" height="90" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="true">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="20%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
                     <div class="card" style="width: 12rem; height: 6rem;">
                         <div class="card-body d-flex justify-content-center
                             align-items-center bg-secondary text-white">
@@ -36,13 +45,13 @@
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <div class="col h1">Follow the instruction on the screen</div>
-                    <img class="instruction-img" alt="image-instructions"
+                    <img id="instruction-img" alt="image-instructions"
                         src="https://via.placeholder.com/550x300">
                     <div class="btn-group btn-group-lg" role="group"
                         style="width: 30em;">
-                        <button type="button" class="btn btn-primary">Small</button>
-                        <button type="button" class="btn btn-primary">Medium</button>
-                        <button type="button" class="btn btn-primary">Large</button>
+                        <button type="button" class="btn btn-primary" id="small">Small</button>
+                        <button type="button" class="btn btn-primary" id="medium">Medium</button>
+                        <button type="button" class="btn btn-primary" id="large">Large</button>
                     </div>
                     <div class="btn-group btn-group-lg" role="group">
                         <button type="button" class="btn btn-secondary" style="background-color: green;">Start</button>

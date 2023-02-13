@@ -16,3 +16,14 @@ for (let i = 0; i < moneyCircle.length; i++) {
         </div>
     </div>`;
 }
+
+let image = document.getElementById("instruction-img");
+document.getElementById("large").onclick = function(){
+    image.setAttribute("src", "https://media.tenor.com/8rExDsHkqhYAAAAd/jinx.gif")
+}
+document.getElementById("medium").onclick = function(){
+    image.setAttribute("src", "https://media.tenor.com/naVSbnJjxxIAAAAC/cat.gif")
+}
+document.getElementById("small").onclick = function(){
+    image.setAttribute("src", "https://media.discordapp.net/attachments/940836266889576488/991556419570630747/8DEAD03-D1EF-4CCA-8F4A-B0A77270D35E-1.gif")
+}
