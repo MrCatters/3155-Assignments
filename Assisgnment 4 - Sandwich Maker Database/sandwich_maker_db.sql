@@ -67,9 +67,9 @@ INSERT INTO recipes VALUES
 
 
 
--- SELECT * FROM sandwiches;
+SELECT * FROM sandwiches;
 -- SELECT * FROM resources;
-SELECT sandwiches.sandwich_size, resources.item, recipes.amount
-FROM recipes
-INNER JOIN sandwiches ON recipes.sandwich_size = sandwiches.id
-INNER JOIN resources ON recipes.item = resources.id
+-- SELECT sandwiches.sandwich_size, resources.item, recipes.amount
+-- FROM recipes
+-- INNER JOIN sandwiches ON recipes.sandwich_size = sandwiches.id
+-- INNER JOIN resources ON recipes.item = resources.id
